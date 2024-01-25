@@ -5,7 +5,7 @@
 
 	<groupId>com.dydzik.jet-app</groupId>
 	<artifactId>common</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0</version>
 	<name>common</name>
 	<description>Jet app</description>
 	<properties>

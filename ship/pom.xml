@@ -27,6 +27,12 @@
 		</dependency>
 
 		<dependency>
+			<groupId>com.dydzik.jet-app</groupId>
+			<artifactId>common</artifactId>
+			<version>1.0</version>
+		</dependency>
+
+		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>

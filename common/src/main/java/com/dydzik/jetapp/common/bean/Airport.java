@@ -16,7 +16,7 @@ public class Airport {
     private int x;
     private int y;
 
-    private void addBoard(String boardName) {
+    public void addBoard(String boardName) {
         int ind = boards.indexOf(boardName);
         if (ind >= 0) {
             boards.set(ind, boardName);
@@ -25,7 +25,7 @@ public class Airport {
         }
     }
 
-    private void removeBoard(String boardName) {
+    public void removeBoard(String boardName) {
         boards.remove(boardName);
     }
 }

@@ -22,7 +22,7 @@ public class OfficeSocketConfiguration implements WebSocketConfigurer {
     @Override
     public void registerWebSocketHandlers(WebSocketHandlerRegistry registry) {
         registry
-                .addHandler(new OfficeSocketHandler(messageConvertor, sessionCache, kafkaTemplate))
+                .addHandler(new OfficeSocketHandler(messageConvertor, sessionCache, kafkaTemplate), "/websocket")
                 .setAllowedOrigins("*");
     }
 }

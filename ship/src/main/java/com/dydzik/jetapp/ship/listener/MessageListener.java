@@ -22,13 +22,15 @@ public class MessageListener {
     @Autowired
     private Map<String, MessageProcessor<? extends Message>> processors = new HashMap<>();
 
-    @KafkaListener(id = "BoardId", topics = "officeRoutes")
-    public void radarListener(String data) {
+    @KafkaListener(id="BoardId", topics="officeRoutes")
+    public void radarListener(String data){
         String code = messageConvertor.extractCode(data);
+        processors.values().forEach(System.out::println);
         try {
             processors.get(code).process(data);
         } catch (Exception e) {
-            log.error("Code: " + code + ". ", e.getLocalizedMessage());
+            log.error("Code: " + code + " . " +  e.getLocalizedMessage());
         }
     }
+
 }

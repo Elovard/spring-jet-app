@@ -10,6 +10,6 @@ public class Message {
     protected Source source;
 
     public String getCode() {
-        return source.name() + " " + type.name();
+        return source.name() + "_" + type.name();
     }
 }
